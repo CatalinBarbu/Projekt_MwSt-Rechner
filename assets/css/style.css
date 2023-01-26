@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: antiquewhite;
+}
+main {
+  width: 100%;
+  max-width: 400px;
+  margin: 20vh auto;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 2vh 1vw;
+  box-shadow: 0 0 10px 10px black;
+  background-color: green;
+}
+.backgroundColor {
+  background-color: rgb(122, 143, 206);
+  margin: 1vh 0;
+  border-radius: 5px;
+}
+.backgroundColor article {
+  margin-bottom: 5px;
+}
+.backgroundColor p {
+  padding: 5px;
+}
+form {
+  padding: 5px 0;
+}
+.submite {
+  text-align: center;
+  border-bottom: 1px solid black;
+  padding-bottom: 3vh;
+}
+#submite {
+  padding: 5px 20%;
+  background-color: darkblue;
+  color: white;
+  font-weight: bold;
+}
+form {
+  padding-left: 2vw;
+}
+.ergebnis {
+  margin: 2vh 0;
+}
+.ergebnis p {
+  color: blueviolet;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+#inPut {
+  max-width: 100px;
+  padding: 5px 0 5px 10px;
+  margin: 0 0 5px 10px;
+  border-radius: 5px;
+}
+#outPutValueBrutto,
+#outPutValueBetrag {
+  font-weight: bold;
+}
+.displayNone {
+  display: none;
+}

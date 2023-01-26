@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mwst-Rechner</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="backgroundColor">
+        <p>Was soll berechnet werden?</p>
+        <form onsubmit="return false">
+          <article>
+            <input type="radio" id="nettoZuBrutto" name="nettoZuBrutto" />
+            <label for="text1"
+              >Mehrwertsteuer aufschlagen (Netto zu Brutto)</label
+            >
+          </article>
+          <article>
+            <input type="radio" id="bruttoZuNetto" name="nettoZuBrutto" />
+            <label for="text2"
+              >Mehrwertsteuer aufschlagen (Brutto zu Netto)</label
+            >
+          </article>
+        </form>
+      </section>
+      <section class="backgroundColor">
+        <p>Mehrwertsteuersatz</p>
+        <form onsubmit="return false">
+          <input type="radio" name="19%" id="mwst19" />
+          <label for="19%">19%</label>
+          <input type="radio" name="19%" id="mwst7" />
+          <label for="7%">7%</label>
+        </form>
+      </section>
+      <section class="backgroundColor">
+        <p>Nettobetrag (Preis ohne Mehrwertsteuer) in Euro</p>
+        <input type="number" name="wert" id="inPut" />
+      </section>
+      <section class="submite">
+        <button id="submite">
+          <p>BERECHNEN</p>
+        </button>
+      </section>
+      <section>
+        <article class="ergebnis">
+          <p>Ergebnis</p>
+        </article>
+        <div class="backgroundColor">
+          <p>Mehrwertsteuerbetrag</p>
+          <p id="outPutValueBetrag"></p>
+        </div>
+        <div class="backgroundColor" id="removeDiv">
+          <p class="replace">Bruttobetrag (Endpreis)</p>
+          <p id="outPutValue"></p>
+        </div>
+      </section>
+    </main>
+    <script src="./assets/Js/main.js"></script>
+  </body>
+</html>
